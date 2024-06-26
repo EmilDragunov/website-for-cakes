@@ -1,0 +1,33 @@
+{% load static %}
+<header>
+  <div>
+    {% with request.resolver_match.view_name as view_name %}            
+    <ul>
+      <li>              
+        <a
+          class="nav-link {% if view_name == 'homepage:index' %} active {% endif %}" 
+          href="{% url 'homepage:index' %}"
+          >
+          Главная 
+        </a> 
+      </li>
+      <li>
+        <a 
+          class="nav-link {% if view_name == 'cake:cake_list' %} active {% endif %}" 
+          href="{% url 'cake:cake_list' %}"
+          >
+          Каталог тортов
+        </a> 
+      </li>
+      <li>
+        <a 
+          class="nav-link {% if view_name == 'about:description' %} active {% endif %}"
+          href="{% url 'about:description' %}"
+        >
+          О проекте
+        </a>
+      </li>
+    </ul>
+    {% endwith %}
+  </div> 
+</header>

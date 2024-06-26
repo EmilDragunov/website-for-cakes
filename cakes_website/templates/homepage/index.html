@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}
+  Торты. Главная
+{% endblock %}
+{% block content %}
+  <h1>Главная страница</h1>
+  <div>
+    {% for cake in cake_list %}
+      {% include "includes/cake_card.html" %}
+    {% endfor %}
+  </div>
+{% endblock %}
