@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  Торты. Список тортов
+{% endblock %}
+{% block content %}
+  <h1>Каталог тортов</h1>
+  <div>
+    {% for cake in cake_list %}
+      {% ifchanged %}
+        <div id="{{ cake.category.slug }}">
+          <div>
+            <h3>{{ cake.category.title }}</h3>
+          </div>
+        </div>
+      {% endifchanged %}
+      {% include "includes/cake_card.html" %}
+    {% endfor %}
+  </div>
+{% endblock %}

@@ -18,4 +18,10 @@ def cake_detail(request, pk):
 
 
 def cake_list(request):
-    pass
+    template = 'cake/list.html'
+    cake_list = Cake.objects.select_related('category').filter(
+        is_published=True,
+        category__is_published=True
+    ).order_by('category')
+    context = {'cake_list': cake_list}
+    return render(request, template, context)

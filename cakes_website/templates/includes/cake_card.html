@@ -1,0 +1,13 @@
+{% load static %}
+<div>
+    <div>
+      <div>           
+        <h5>{{ cake.title }} </h5>
+        <p>{{ cake.price }}</p>
+        <p>{{ cake.description|truncatechars:40 }}</p>
+        <a href="{% url 'cake:cake_detail' cake.id %}">
+          Подробнее -->
+        </a>
+      </div>
+    </div>
+  </div>

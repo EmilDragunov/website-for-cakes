@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  Торты. Торт {{ cake.title|lower }}
+{% endblock %}
+{% block content %}
+  <h1>{{ cake.title }}</h1>  
+  <div>
+    <div>
+      <h2>Описание</h2>
+      <p>{{ cake.description }}</p> 
+      <h4>
+        <span>{{ cake.category.title }}</span>
+        <span>{{ cake.price }}</span>
+      </h4>
+      Украшения:
+      <ul>
+        {% for decoration in cake.decorations.all %}
+          <li>- {{ decoration.title }}</li>
+        {% endfor %}        
+      </ul>
+    </div>
+  </div>     
+{% endblock %}

@@ -47,7 +47,9 @@ class Cake(PublishedModel):
         default=100,
         verbose_name='Порядок отображения'
     )
-    price = models.DecimalField(max_digits=5, decimal_places=2,
+    weight = models.DecimalField(max_digits=7, decimal_places=2,
+                                 verbose_name='Вес', default=100)
+    price = models.DecimalField(max_digits=8, decimal_places=2,
                                 verbose_name='Цена')
     category = models.ForeignKey(
         Category,
