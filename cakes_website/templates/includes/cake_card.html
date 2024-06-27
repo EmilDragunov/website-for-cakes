@@ -4,7 +4,7 @@
       <div>           
         <h5>{{ cake.title }} </h5>
         <p>{{ cake.price }}<a> руб</a></p>
-        <p>Вес: {{ cake.weight }} г.</p>
+        <p>Вес: {{ cake.weight }} г</p>
         <p>{{ cake.description|truncatechars:40 }}</p>
         <a href="{% url 'cake:cake_detail' cake.id %}">
           Подробнее -->

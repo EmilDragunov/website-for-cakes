@@ -26,11 +26,15 @@ class CakeAdmin(admin.ModelAdmin):
         'description',
         'is_published',
         'is_on_main',
+        'price',
+        'weight',
         'category'
     )
     list_editable = (
         'is_published',
         'is_on_main',
+        'price',
+        'weight',
         'category'
     )
     search_fields = ('title',)

@@ -1,0 +1,212 @@
+[
+{
+  "model": "cake.category",
+  "pk": 1,
+  "fields": {
+    "is_published": true,
+    "title": "Бисквитные торты",
+    "slug": "sponge_cakes",
+    "output_order": 100
+  }
+},
+{
+  "model": "cake.category",
+  "pk": 2,
+  "fields": {
+    "is_published": true,
+    "title": "Творожные торты",
+    "slug": "curd_cakes",
+    "output_order": 100
+  }
+},
+{
+  "model": "cake.category",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "title": "Слоеные торты",
+    "slug": "layer_cakes",
+    "output_order": 100
+  }
+},
+{
+  "model": "cake.category",
+  "pk": 4,
+  "fields": {
+    "is_published": true,
+    "title": "Медовые торты",
+    "slug": "honey_cakes",
+    "output_order": 100
+  }
+},
+{
+  "model": "cake.category",
+  "pk": 5,
+  "fields": {
+    "is_published": true,
+    "title": "Песочные торты",
+    "slug": "sand_cakes",
+    "output_order": 100
+  }
+},
+{
+  "model": "cake.category",
+  "pk": 6,
+  "fields": {
+    "is_published": true,
+    "title": "Вафельные торты",
+    "slug": "waffle_cakes",
+    "output_order": 100
+  }
+},
+{
+  "model": "cake.decoration",
+  "pk": 1,
+  "fields": {
+    "is_published": true,
+    "title": "Фрукты и ягоды",
+    "slug": "fruits_and_berries"
+  }
+},
+{
+  "model": "cake.decoration",
+  "pk": 2,
+  "fields": {
+    "is_published": true,
+    "title": "Мастика",
+    "slug": "mastic"
+  }
+},
+{
+  "model": "cake.decoration",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "title": "Безе",
+    "slug": "meringue"
+  }
+},
+{
+  "model": "cake.decoration",
+  "pk": 4,
+  "fields": {
+    "is_published": true,
+    "title": "Крем",
+    "slug": "cream"
+  }
+},
+{
+  "model": "cake.decoration",
+  "pk": 5,
+  "fields": {
+    "is_published": true,
+    "title": "Желе",
+    "slug": "jelly"
+  }
+},
+{
+  "model": "cake.decoration",
+  "pk": 6,
+  "fields": {
+    "is_published": true,
+    "title": "Шоколадная глазурь",
+    "slug": "chocolate_glaze"
+  }
+},
+{
+  "model": "cake.decoration",
+  "pk": 7,
+  "fields": {
+    "is_published": true,
+    "title": "Посыпки",
+    "slug": "sprinkles"
+  }
+},
+{
+  "model": "cake.cake",
+  "pk": 1,
+  "fields": {
+    "is_published": true,
+    "title": "Медовик",
+    "description": "Торт «Медовик» – это нежные и воздушные коржи, пропитанные вкусом карамели и сметанным кремом. Это приятное медовое послевкусие, которое никого не оставит равнодушным. Секреты приготовления правильного и вкусного медовика: Медовик – десерт несложный, основной секрет которого – правильная выпечка коржей.",
+    "category": 4,
+    "is_on_main": true,
+    "price": 4500,
+    "weight": 1000,
+    "output_order": 100,
+    "decorations": [
+      1
+    ]
+  }
+},
+{
+  "model": "cake.cake",
+  "pk": 2,
+  "fields": {
+    "is_published": true,
+    "title": "Чизкейк",
+    "description": "«Чизкейк» — блюдо европейской и американской кухни, представляющее собой сыросодержащий десерт от творожной запеканки до суфле.",
+    "category": 2,
+    "is_on_main": true,
+    "price": 3500,
+    "weight": 900,
+    "output_order": 100,
+    "decorations": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "cake.cake",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "title": "Прага",
+    "description": "«Прага» — шоколадный торт, широко известный со времён СССР. Состоит из трёх бисквитных коржей с двумя слоями крема «Пражский». Верхняя и боковые поверхности покрыты повидлом и заглазированы помадкой (либо боковые поверхности отделаны кремом и бисквитной крошкой). Сверху украшен рисунком из крема.",
+    "category": 1,
+    "is_on_main": true,
+    "price": 5000,
+    "weight": 1200,
+    "output_order": 100,
+    "decorations": [
+      6
+    ]
+  }
+},
+{
+  "model": "cake.cake",
+  "pk": 4,
+  "fields": {
+    "is_published": true,
+    "title": "Наполеон",
+    "description": "Торт «Наполеон» — многослойный торт из слоёного теста с масляным (или заварным) кремом.",
+    "category": 3,
+    "is_on_main": true,
+    "price": 3000,
+    "weight": 1000,
+    "output_order": 100,
+    "decorations": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "cake.cake",
+  "pk": 5,
+  "fields": {
+    "is_published": true,
+    "title": "Птичье молоко",
+    "description": "Торт «Птичье молоко» — легкий, нежный и воздушный десерт. Он готовится на основе нежного бисквита, суфле из взбитых белков и шоколадной глазури.",
+    "category": 1,
+    "is_on_main": true,
+    "price": 2500,
+    "weight": 700,
+    "output_order": 100,
+    "decorations": [
+      6
+    ]
+  }
+}
+]
