@@ -1,8 +1,33 @@
 body {
-    background: pink
+    background: #fcf9e8
 }
 
 header {    
-    background: grey;
-    border: 5px solid black;   
+    background: #f2c2e5;
+    border: 5px solid pink;   
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #fd33a2 #000 #d706bf;
+  border-radius: 6px;
+  background: linear-gradient(#f30fa7, #d90fe0) #e3167c;
+  transition: 0.2s;
+}
+.button:hover { background: linear-gradient(#704461, #784e7a) #e3167c;; }
+.button:active { background: linear-gradient(#704862, #774a78) #e3167c; }
+
+ul li {
+  display:inline-block;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
 }

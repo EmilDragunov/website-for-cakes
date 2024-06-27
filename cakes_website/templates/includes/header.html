@@ -3,25 +3,28 @@
   <div>
     {% with request.resolver_match.view_name as view_name %}            
     <ul>
+      <a href="{% url 'homepage:index' %}">
+        <img src="{% static 'img/cake.png' %}"> 
+      </a>
       <li>              
         <a
-          class="nav-link {% if view_name == 'homepage:index' %} active {% endif %}" 
+          class="button {% if view_name == 'homepage:index' %} active {% endif %}" 
           href="{% url 'homepage:index' %}"
           >
           Главная 
-        </a> 
+        </a>
       </li>
       <li>
         <a 
-          class="nav-link {% if view_name == 'cake:cake_list' %} active {% endif %}" 
+          class="button {% if view_name == 'cake:cake_list' %} active {% endif %}" 
           href="{% url 'cake:cake_list' %}"
           >
           Каталог тортов
-        </a> 
+        </a>
       </li>
       <li>
         <a 
-          class="nav-link {% if view_name == 'about:description' %} active {% endif %}"
+          class="button {% if view_name == 'about:description' %} active {% endif %}"
           href="{% url 'about:description' %}"
         >
           О проекте
@@ -30,7 +33,4 @@
     </ul>
     {% endwith %}
   </div>
-  <a href="{% url 'homepage:index' %}">
-    <img src="{% static 'img/cake.png' %}" height="100">            
-  </a>
 </header>
