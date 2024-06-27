@@ -46,4 +46,3 @@ class CakeAdmin(admin.ModelAdmin):
 admin.site.register(Cake, CakeAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Decoration)
-
