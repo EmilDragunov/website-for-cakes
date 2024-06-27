@@ -4,7 +4,10 @@
   Торты. Торт {{ cake.title|lower }}
 {% endblock %}
 {% block content %}
-  <h1>{{ cake.title }}</h1>  
+  <h1>{{ cake.title }}</h1>
+  {% if cake.images %}
+    <img src="{{ cake.images.all.0.image.url }}" alt="{{ cake.images.all.0.title }}"> 
+  {% endif %}  
   <div>
     <div>
       <h2>Описание</h2>

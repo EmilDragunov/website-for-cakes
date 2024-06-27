@@ -11,6 +11,18 @@ class PublishedModel(models.Model):
         abstract = True
 
 
+class Image(models.Model):
+    title = models.CharField(max_length=256, verbose_name='Название')
+    image = models.ImageField(upload_to='images', verbose_name='Изображение')
+
+    class Meta:
+        verbose_name = 'Изображение'
+        verbose_name_plural = 'Изображения'
+
+    def __str__(self):
+        return self.title
+
+
 class Category(PublishedModel):
     title = models.CharField(max_length=256, verbose_name='Название')
     slug = models.SlugField(max_length=64, unique=True, verbose_name='Слаг')
@@ -47,6 +59,7 @@ class Cake(PublishedModel):
         default=100,
         verbose_name='Порядок отображения'
     )
+    images = models.ManyToManyField(Image, verbose_name='Изображения')
     price = models.DecimalField(max_digits=8, decimal_places=2,
                                 verbose_name='Цена')
     weight = models.DecimalField(max_digits=8, decimal_places=2,

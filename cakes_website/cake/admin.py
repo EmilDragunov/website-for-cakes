@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Cake, Category, Decoration
+from .models import Cake, Category, Decoration, Image
 
 
 admin.site.empty_value_display = 'Не задано'
@@ -8,7 +8,7 @@ admin.site.empty_value_display = 'Не задано'
 class CakeInline(admin.StackedInline):
     model = Cake
     extra = 0
-    filter_horizontal = ('decorations',)
+    filter_horizontal = ('decorations', 'images')
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -40,9 +40,10 @@ class CakeAdmin(admin.ModelAdmin):
     search_fields = ('title',)
     list_filter = ('category',)
     list_display_links = ('title',)
-    filter_horizontal = ('decorations',)
+    filter_horizontal = ('decorations', 'images')
 
 
 admin.site.register(Cake, CakeAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Decoration)
+admin.site.register(Image)
