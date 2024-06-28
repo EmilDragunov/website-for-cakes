@@ -59,7 +59,8 @@ class Cake(PublishedModel):
         default=100,
         verbose_name='Порядок отображения'
     )
-    images = models.ManyToManyField(Image, verbose_name='Изображения')
+    images = models.ManyToManyField(Image, blank=True,
+                                    verbose_name='Изображения')
     price = models.DecimalField(max_digits=8, decimal_places=2,
                                 verbose_name='Цена')
     weight = models.DecimalField(max_digits=8, decimal_places=2,
