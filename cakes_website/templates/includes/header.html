@@ -8,7 +8,7 @@
       </a>
       <li>              
         <a
-          class="button {% if view_name == 'homepage:index' %} active {% endif %}" 
+          class="button {% if view_name == 'homepage:index' %} header-active {% endif %}" 
           href="{% url 'homepage:index' %}"
           >
           Главная 
@@ -16,7 +16,7 @@
       </li>
       <li>
         <a 
-          class="button {% if view_name == 'cake:cake_list' %} active {% endif %}" 
+          class="button {% if view_name == 'cake:cake_list' %} header-active {% endif %}" 
           href="{% url 'cake:cake_list' %}"
           >
           Каталог тортов
@@ -24,7 +24,7 @@
       </li>
       <li>
         <a 
-          class="button {% if view_name == 'about:description' %} active {% endif %}"
+          class="button {% if view_name == 'about:description' %} header-active {% endif %}"
           href="{% url 'about:description' %}"
         >
           О проекте

@@ -17,11 +17,19 @@ header {
   border-style: solid none;
   border-color: #fd33a2 #000 #d706bf;
   border-radius: 6px;
-  background: linear-gradient(#f30fa7, #d90fe0) #e3167c;
+  background: linear-gradient(to right, #f30fa7, #d90fe0);
   transition: 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.button:hover { background: linear-gradient(#704461, #784e7a) #e3167c;; }
-.button:active { background: linear-gradient(#704862, #774a78) #e3167c; }
+
+.button:hover {
+  background: linear-gradient(to right, #704461, #784e7a);
+}
+
+.button.header-active {
+  background: linear-gradient(#704862, #774a78) #e3167c;
+  color: #fcf9e8;
+}
 
 ul li {
   display:inline-block;
@@ -43,13 +51,13 @@ header img {
 }
 
 .pagination a:hover {
-  background-color: #e3167c;
+  background-color: #ff69b4;
   color: #fcf9e8;
   border-color: #a7077c;
 }
 
 .page-item.active .page-link {
-  background-color: #ff69b4;
+  background-color: #e3167c;
   color: #fcf9e8;
   border-color: #d706bf;
 }
