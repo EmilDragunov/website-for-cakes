@@ -42,7 +42,7 @@ header img {
 
 .img_cake {
   width: 350px;
-  height: 450px;  
+  height: 375px;  
 }
 
 .pagination a {
@@ -70,19 +70,17 @@ header img {
   box-shadow: 0 0 0 3px #ff69b4;
 }
 
-
-
-
-
-
-
 .cake-card {
   border: 1px solid #ddd; 
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  margin-top: 10px;
+  margin: 20px;
   width: 350px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
 }
 
 .cake-card__image {
@@ -90,32 +88,36 @@ header img {
   margin-bottom: 15px;
 }
 
+.cake-card__image img {
+  display: block;
+  width: 100%; 
+  margin: 0 auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cake-card__content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
 
 .cake-card__button {
   display: inline-block;
+  width: 120px;
   background-color: #ff69b4;
   color: #fff;
   padding: 8px 15px;
-  border-radius: 5px;
-  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration-color: #fcf9e8;
+  text-decoration-line: none;
 }
-
-
-
-
-
-
-
-
 
 .cake-cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.cake-card {
-  /*  ... ваш существующий код для карточки ... */
-  flex: 1 0 250px;
-  margin-bottom: 20px;
+  justify-content: center; 
 }
