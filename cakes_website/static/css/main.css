@@ -36,3 +36,29 @@ header img {
   width: 350px;
   height: 450px;  
 }
+
+.pagination a {
+  background-color: pink;
+  color: #fd33a2;
+}
+
+.pagination a:hover {
+  background-color: #e3167c;
+  color: #fcf9e8;
+  border-color: #a7077c;
+}
+
+.page-item.active .page-link {
+  background-color: #ff69b4;
+  color: #fcf9e8;
+  border-color: #d706bf;
+}
+
+.page-item.active .page-link:focus {
+  box-shadow: 0 0 0 3px #ff69b4;
+}
+
+.pagination a:focus {
+  box-shadow: 0 0 0 3px #ff69b4;
+}
+

@@ -1,0 +1,19 @@
+{% if cake_list.has_other_pages %}
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        {% if cake_list.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page={{ cake_list.previous_page_number }}">Предыдущая</a></li>
+        {% endif %}
+        {% for num in cake_list.paginator.page_range %}
+            {% if num == cake_list.number %}
+                <li class="page-item active"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+            {% else %}
+                <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+            {% endif %}
+        {% endfor %}
+        {% if cake_list.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ cake_list.next_page_number }}">Следующая</a></li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}
