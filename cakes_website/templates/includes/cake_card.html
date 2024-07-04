@@ -1,4 +1,4 @@
-{% load static %}
+{% comment %} {% load static %}
 <div>
     <div>
       <div>           
@@ -16,8 +16,37 @@
         <p>Вес: {{ cake.weight }} г</p>
         <p>{{ cake.description|truncatechars:40 }}</p>
         <a href="{% url 'cake:cake_detail' cake.id %}">
-          Подробнее -->
+          Подробнее о торте-->
         </a>
       </div>
     </div>
+  </div> {% endcomment %}
+
+
+
+
+{% load static %}
+<div class="cake-cards-container">
+  <div class="cake-card">
+    <div class="cake-card__image"> 
+      {% if cake.images.all %}
+        <ul>
+          {% for image in cake.images.all %}
+            <li>
+              <img class="img_cake" src="{{ image.image.url }}" alt="{{ image.title }}">
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %} 
+    </div>
+    <div class="cake-card__info">
+      <h5>{{ cake.title }} </h5>
+      <p>{{ cake.price }}<a> руб</a></p>
+      <p>Вес: {{ cake.weight }} г</p>
+      <p>{{ cake.description|truncatechars:40 }}</p>
+      <a href="{% url 'cake:cake_detail' cake.id %}" class="cake-card__button">
+        Подробнее о торте-->
+      </a>
+    </div>
   </div>
+</div>

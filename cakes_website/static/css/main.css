@@ -70,3 +70,52 @@ header img {
   box-shadow: 0 0 0 3px #ff69b4;
 }
 
+
+
+
+
+
+
+.cake-card {
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+.cake-card__image {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.cake-card__button {
+  display: inline-block;
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.cake-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cake-card {
+  /*  ... ваш существующий код для карточки ... */
+  flex: 1 0 250px;
+  margin-bottom: 20px;
+}
