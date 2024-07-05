@@ -4,4 +4,4 @@ from django.apps import AppConfig
 class CakeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'cake'
-    verbose_name = 'Каталог тортов'
+    verbose_name = "Kate's Cakes"

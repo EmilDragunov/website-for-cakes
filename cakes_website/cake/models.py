@@ -23,55 +23,21 @@ class Image(models.Model):
         return self.title
 
 
-class Category(PublishedModel):
-    title = models.CharField(max_length=256, verbose_name='Название')
-    slug = models.SlugField(max_length=64, unique=True, verbose_name='Слаг')
-    output_order = models.PositiveSmallIntegerField(
-        default=100,
-        verbose_name='Порядок отображения'
-    )
-
-    class Meta:
-        verbose_name = 'Категория'
-        verbose_name_plural = 'Категории'
-
-    def __str__(self):
-        return self.title
-
-
-class Decoration(PublishedModel):
-    title = models.CharField(max_length=256, verbose_name='Название')
-    slug = models.SlugField(max_length=64, unique=True, verbose_name='Слаг')
-
-    class Meta:
-        verbose_name = 'Украшение'
-        verbose_name_plural = 'Украшения'
-
-    def __str__(self):
-        return self.title
-
-
 class Cake(PublishedModel):
     is_on_main = models.BooleanField(default=False, verbose_name='На главную')
-    title = models.CharField(max_length=256, verbose_name='Название')
-    description = models.TextField(verbose_name='Описание')
     output_order = models.PositiveSmallIntegerField(
         default=100,
         verbose_name='Порядок отображения'
     )
+    title = models.CharField(max_length=256, verbose_name='Название')
+    description = models.TextField(verbose_name='Описание')
+    composition = models.TextField(verbose_name='Состав', default='')
     images = models.ManyToManyField(Image, blank=True,
                                     verbose_name='Изображения')
     price = models.DecimalField(max_digits=8, decimal_places=0,
                                 verbose_name='Цена')
     weight = models.DecimalField(max_digits=8, decimal_places=0,
                                  verbose_name='Вес')
-    category = models.ForeignKey(
-        Category,
-        on_delete=models.CASCADE,
-        related_name='cakes',
-        verbose_name='Категория'
-    )
-    decorations = models.ManyToManyField(Decoration, verbose_name='Украшения')
 
     class Meta:
         verbose_name = 'Торт'

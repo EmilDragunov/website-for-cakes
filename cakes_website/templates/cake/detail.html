@@ -4,31 +4,18 @@
   Kate's Cakes | {{ cake.title }}
 {% endblock %}
 {% block content %}
-  <h1>{{ cake.title }}</h1>
   {% if cake.images.all %}
     <ul>
       {% for image in cake.images.all %}
         <li>
-          <img class="img_cake" src="{{ image.image.url }}" alt="{{ image.title }}">
+          <img class="img_cake_detail" src="{{ image.image.url }}" alt="{{ image.title }}">
         </li>
       {% endfor %}
     </ul>
-  {% endif %}  
-  <div>
-    <div>
-      <h2>Описание</h2>
-      <p>{{ cake.description }}</p> 
-      <h4>
-        <span>{{ cake.category.title }}</span><br>
-        <span>{{ cake.price }}<a> р.</a></span><br>
-        <span>Вес: {{ cake.weight }} г.</span>
-      </h4>
-      Украшения:
-      <ul>
-        {% for decoration in cake.decorations.all %}
-          <li>- {{ decoration.title }}</li>
-        {% endfor %}        
-      </ul>
-    </div>
-  </div>     
+  {% endif %}
+  <h3>{{ cake.title }}</h3>
+  <h5>{{ cake.price }}<a> р.</a></h5>
+  <span><b>{{ cake.description }}</b></span><br>
+  <span><b>Состав: </b>{{ cake.composition }}</span><br>
+  <span><b>Вес: </b>{{ cake.weight }} г.</span>
 {% endblock %}
