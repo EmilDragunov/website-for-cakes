@@ -6,8 +6,10 @@
     {% endif %}
   </div>
   <div class="cake-card__content">
-    <h3>{{ cake.title }} </h3>
-    <p>{{ cake.description }}</p>
+    <div class="cake-card__title-description">
+      <h3>{{ cake.title }} </h3>
+      <p>{{ cake.description }}</p>
+    </div>
     <div class="cake-card__price-button">
       <p class="cake-card__price">{{ cake.price }}<a> р.</a></p>
       <a href="{% url 'cake:cake_detail' cake.id %}" class="cake-card__button">
