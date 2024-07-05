@@ -17,17 +17,17 @@ header {
   border-style: solid none;
   border-color: #9d8676 #000 #9d8676;
   border-radius: 6px;
-  background: linear-gradient(to right, #b8a89a, #67574c);
+  background: linear-gradient(to bottom, #b8a89a, #67574c);
   transition: 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-  background: linear-gradient(to right, #8c6a51, #50433b);
+  background: linear-gradient(to bottom, #8c6a51, #50433b);
 }
 
 .button.header-active {
-  background: linear-gradient(#8c6a51, #50433b) #b8a89a;
+  background: linear-gradient(to bottom, #8c6a51, #50433b) #b8a89a;
   color: white;
 }
 
@@ -122,4 +122,10 @@ header img {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+}
+
+.cake-category {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
