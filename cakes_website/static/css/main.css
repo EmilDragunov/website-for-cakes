@@ -1,10 +1,10 @@
 body {
-    background: #fcf9e8
+    background: white;
 }
 
 header {    
-    background: #f2c2e5;
-    border: 5px solid pink;   
+    background: #d8ccc0;
+    border: 5px solid #b8a89a;   
 }
 
 .button {
@@ -15,20 +15,20 @@ header {
   outline: none;
   border-width: 2px 0;
   border-style: solid none;
-  border-color: #fd33a2 #000 #d706bf;
+  border-color: #9d8676 #000 #9d8676;
   border-radius: 6px;
-  background: linear-gradient(to right, #f30fa7, #d90fe0);
+  background: linear-gradient(to right, #b8a89a, #67574c);
   transition: 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-  background: linear-gradient(to right, #704461, #784e7a);
+  background: linear-gradient(to right, #8c6a51, #50433b);
 }
 
 .button.header-active {
-  background: linear-gradient(#704862, #774a78) #e3167c;
-  color: #fcf9e8;
+  background: linear-gradient(#8c6a51, #50433b) #b8a89a;
+  color: white;
 }
 
 ul li {
@@ -36,38 +36,38 @@ ul li {
 }
 
 header img {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 140px;
 }
 
 .img_cake {
-  width: 350px;
-  height: 375px;  
+  width: 300px;
+  height: 350px;  
 }
 
 .pagination a {
-  background-color: pink;
-  color: #fd33a2;
+  background-color: #d8ccc0;
+  color: #473226;
 }
 
 .pagination a:hover {
-  background-color: #ff69b4;
-  color: #fcf9e8;
-  border-color: #a7077c;
+  background-color: #8c6a51;
+  color: white;
+  border-color: #50433b;
 }
 
 .page-item.active .page-link {
-  background-color: #e3167c;
-  color: #fcf9e8;
-  border-color: #d706bf;
+  background-color: #8c6a51;
+  color: white;
+  border-color: #50433b;
 }
 
 .page-item.active .page-link:focus {
-  box-shadow: 0 0 0 3px #ff69b4;
+  box-shadow: 0 0 0 3px #94755a;
 }
 
 .pagination a:focus {
-  box-shadow: 0 0 0 3px #ff69b4;
+  box-shadow: 0 0 0 3px #94755a;
 }
 
 .cake-card {
@@ -75,12 +75,13 @@ header img {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  margin-top: 10px;
-  margin: 20px;
-  width: 350px;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 330px;
   display: flex;
   flex-direction: column;
-  flex: 0 0 25%;
+  flex: 0 0 22%;
 }
 
 .cake-card__image {
@@ -107,17 +108,18 @@ header img {
 .cake-card__button {
   display: inline-block;
   width: 120px;
-  background-color: #ff69b4;
+  background-color: #8c6a51;
   color: #fff;
   padding: 8px 15px;
   border-radius: 50px;
   text-align: center;
-  text-decoration-color: #fcf9e8;
+  text-decoration-color: white;
   text-decoration-line: none;
 }
 
 .cake-cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
+  margin-top: 20px;
 }

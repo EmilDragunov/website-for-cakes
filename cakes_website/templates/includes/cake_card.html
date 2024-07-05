@@ -8,7 +8,7 @@
   <div class="cake-card__content">
     <h5>{{ cake.title }} </h5>
     <p>{{ cake.description|truncatechars:40 }}</p>
-    <p>{{ cake.price }}<a> руб</a></p>
+    <p>{{ cake.price }}<a> р.</a></p>
     <a href="{% url 'cake:cake_detail' cake.id %}" class="cake-card__button">
       Подробнее
     </a>

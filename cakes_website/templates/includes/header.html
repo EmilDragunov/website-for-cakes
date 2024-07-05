@@ -3,10 +3,8 @@
   <div>
     {% with request.resolver_match.view_name as view_name %}            
     <ul>
-      <a href="{% url 'homepage:index' %}">
-        <img src="{% static 'img/cake.png' %}"> 
-      </a>
-      <li>              
+      <a href="{% url 'homepage:index' %}"><img src="{% static 'img/logo.png' %}"></a>
+      <li>
         <a
           class="button {% if view_name == 'homepage:index' %} header-active {% endif %}" 
           href="{% url 'homepage:index' %}"
