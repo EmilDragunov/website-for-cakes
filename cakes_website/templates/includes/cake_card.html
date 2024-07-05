@@ -6,11 +6,13 @@
     {% endif %}
   </div>
   <div class="cake-card__content">
-    <h5>{{ cake.title }} </h5>
+    <h3>{{ cake.title }} </h3>
     <p>{{ cake.description }}</p>
-    <p>{{ cake.price }}<a> р.</a></p>
-    <a href="{% url 'cake:cake_detail' cake.id %}" class="cake-card__button">
-      Подробнее
-    </a>
+    <div class="cake-card__price-button">
+      <p class="cake-card__price">{{ cake.price }}<a> р.</a></p>
+      <a href="{% url 'cake:cake_detail' cake.id %}" class="cake-card__button">
+        Подробнее
+      </a>
+    </div>
   </div>
 </div>

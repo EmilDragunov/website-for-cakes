@@ -1,131 +1,142 @@
 body {
-    background: white;
+  background: white;
 }
 
 header {    
-    background: #d8ccc0;
-    border: 5px solid #b8a89a;   
+  background: #d8ccc0;
+  border: 5px solid #b8a89a;   
 }
 
 .button {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  padding: .5em 2em;
-  outline: none;
-  border-width: 2px 0;
-  border-style: solid none;
-  border-color: #9d8676 #000 #9d8676;
-  border-radius: 6px;
-  background: linear-gradient(to bottom, #b8a89a, #67574c);
-  transition: 0.2s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+display: inline-block;
+color: white;
+text-decoration: none;
+padding: .5em 2em;
+outline: none;
+border-width: 2px 0;
+border-style: solid none;
+border-color: #9d8676 #000 #9d8676;
+border-radius: 6px;
+background: linear-gradient(to bottom, #b8a89a, #67574c);
+transition: 0.2s;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-  background: linear-gradient(to bottom, #8c6a51, #50433b);
+background: linear-gradient(to bottom, #8c6a51, #50433b);
 }
 
 .button.header-active {
-  background: linear-gradient(to bottom, #8c6a51, #50433b) #b8a89a;
-  color: white;
+background: linear-gradient(to bottom, #8c6a51, #50433b) #b8a89a;
+color: white;
 }
 
 ul li {
-  display:inline-block;
+display:inline-block;
 }
 
 header img {
-  width: 250px;
-  height: 120px;
+width: 250px;
+height: 120px;
 }
 
 .img_cake {
-  width: 300px;
-  height: 350px;  
+width: 300px;
+height: 350px;  
 }
 
 .pagination a {
-  background-color: #d8ccc0;
-  color: #473226;
+background-color: #d8ccc0;
+color: #473226;
 }
 
 .pagination a:hover {
-  background-color: #8c6a51;
-  color: white;
-  border-color: #50433b;
+background-color: #8c6a51;
+color: white;
+border-color: #50433b;
 }
 
 .page-item.active .page-link {
-  background-color: #8c6a51;
-  color: white;
-  border-color: #50433b;
+background-color: #8c6a51;
+color: white;
+border-color: #50433b;
 }
 
 .page-item.active .page-link:focus {
-  box-shadow: 0 0 0 3px #94755a;
+box-shadow: 0 0 0 3px #94755a;
 }
 
 .pagination a:focus {
-  box-shadow: 0 0 0 3px #94755a;
+box-shadow: 0 0 0 3px #94755a;
 }
 
 .cake-card {
-  border: 1px solid #ddd; 
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 330px;
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 24%;
+border: 1px solid #ddd; 
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+margin-top: 10px;
+margin-left: 20px;
+margin-right: 20px;
+width: 330px;
+display: flex;
+flex-direction: column;
+flex: 0 0 24%;
 }
 
 .cake-card__image {
-  text-align: center;
-  margin-bottom: 15px;
+text-align: center;
 }
 
 .cake-card__image img {
-  display: block;
-  width: 100%; 
-  margin: 0 auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+display: block;
+width: 100%; 
+margin: 0 auto;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 }
 
 .cake-card__content {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex-grow: 1;
 }
 
 .cake-card__button {
-  display: inline-block;
-  width: 120px;
-  background-color: #8c6a51;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 50px;
-  text-align: center;
-  text-decoration-color: white;
-  text-decoration-line: none;
+display: inline-block;
+width: 120px;
+background-color: #8c6a51;
+color: #fff;
+padding: 8px 15px;
+border-radius: 50px;
+text-align: center;
+text-decoration-color: white;
+text-decoration-line: none;
 }
 
 .cake-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 20px;
 }
 
 .img_cake_detail {
-  width: 300px;
-  height: 350px;
-  margin-top: 20px;
+width: 300px;
+height: 350px;
+margin-top: 20px;
+}
+
+.cake-card__price-button {
+display: flex;
+flex-direction: column;
+align-items: baseline;
+margin-top: 10px; 
+}
+
+.cake-card__price {
+font-size: 18px;
+margin-bottom: 5px; 
 }
