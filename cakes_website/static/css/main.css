@@ -81,7 +81,7 @@ header img {
   width: 330px;
   display: flex;
   flex-direction: column;
-  flex: 0 0 22%;
+  flex: 0 0 24%;
 }
 
 .cake-card__image {
@@ -122,10 +122,4 @@ header img {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-}
-
-.cake-category {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
 }
