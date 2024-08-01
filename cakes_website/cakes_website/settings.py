@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'cake.apps.CakeConfig',
     'homepage.apps.HomepageConfig',
     'about.apps.AboutConfig',
+    'jsonfield',
 ]
 
 MIDDLEWARE = [

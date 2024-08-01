@@ -9,7 +9,7 @@ def index(request):
         is_published=True,
         is_on_main=True
     ).order_by('title')
-    paginator = Paginator(cake_list, 3)
+    paginator = Paginator(cake_list, 100)
     page_number = request.GET.get('page')
     try:
         cakes = paginator.page(page_number)
